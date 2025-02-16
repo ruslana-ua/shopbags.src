@@ -1,0 +1,28 @@
+<div id="popup-mail" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content--quick-order">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<h4 class="popup__title">Надіслати повідомлення на пошту</h4>
+			<div class="popup__text">
+				<p>Заповніть форму вказавши вашу електронну адресу та ми відповімо вам найближчим часом</p>
+			</div>
+			<form action="" class="popup__form form">
+				<div class="form__list">
+					<div class="form__data">
+						<input data-error="Мінімум 2 символи" data-required="name" data-validate type="text" name="name" class="form__input">
+						<div class="form__label">Імʼя*</div>
+					</div>
+					<div class="form__data">
+						<input data-error="Поле є обовʼязковим для заповнення" data-required="email" data-validate type="email" name="phone" class="form__input">
+						<div class="form__label">E-mail*</div>
+					</div>
+					<div class="form__data form__data--mod">
+						<textarea data-error="Мінімум 10 символів" data-required="comment" data-validate name="comment" placeholder="Введіть ваш коментар" class="form__textarea"></textarea>
+						<div class="form__label form__label--show">Коментар*</div>
+					</div>
+				</div>
+				<button type="submit" class="form__sent btn">Надіслати повідомлення</button>
+			</form>
+		</div>
+	</div>
+</div>

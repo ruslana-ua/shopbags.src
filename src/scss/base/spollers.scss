@@ -1,0 +1,77 @@
+// Базові стилі спойлерів
+// Сніппет (HTML): spoller
+
+// Блок зі спойлерами
+.spollers {
+	display: grid;
+	border-top: 1px solid rgba(0, 0, 0, 0.18);
+}
+// Спойлер
+.spollers__item {
+	padding: 24px 0px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+summary {
+	list-style: none;
+	&::marker,
+	&::-webkit-details-marker {
+		display: none;
+	}
+}
+// Заголовок спойлера
+.spollers__title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	column-gap: 32px;
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	font-size: 13px;
+	font-weight: 500;
+	position: relative;
+	transition: all 0.2s ease-in-out 0s;
+	._spoller-init & {
+		cursor: pointer;
+		&::before {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 18px;
+			height: 18px;
+			@extend %ic;
+			content: "\e914";
+			// _icon-plus:
+			font-size: 16px;
+			color: rgba(0, 0, 0, 1);
+			transition: all 0.2s ease-in-out 0s;
+		}
+		&._spoller-active {
+			color: rgba(0, 0, 0, 0.6);
+			&::before {
+				content: "\e912";
+				// _icon-minus:
+			}
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			color: rgba(0, 0, 0, 0.6);
+			&::before {
+				color: rgba(0, 0, 0, 0.6);
+			}
+		}
+	}
+}
+// Контент спойлера
+.spollers__body {
+	padding: 16px 0px 0px 0px;
+	color: rgba(0, 0, 0, 0.60);
+	font-size: 13px;
+	p {
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+	}
+}

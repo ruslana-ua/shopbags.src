@@ -1,0 +1,220 @@
+// <SELECT>
+// Сніппет (HTML): sel
+.select {
+	min-width: 0;
+	position: relative;
+	z-index: 1;
+	&._form-valid~.form__label,
+	&._select-open~.form__label {
+		font-size: 12px;
+		line-height: 18px;
+		color: var(--bg-secondary);
+		transform: translateY(-20px);
+	}
+	// .select__body
+	&__body {
+		position: relative;
+	}
+	// .select__title
+	&__title {
+		color: inherit;
+		text-align: left;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 21px;
+		padding: 20px 0px 2px 0px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+		cursor: pointer;
+		width: 100%;
+		border-radius: 0 !important;
+		transition: all 0.2s ease-in-out 0s;
+		&:hover {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+		}
+		&:focus,
+		._select-open &,
+		._form-valid & {
+			border-bottom: 1px solid var(--bg-secondary);
+		}
+		&:disabled {
+			border-bottom: 1px solid #636363;
+			pointer-events: none;
+		}
+		&._form-error {
+			border-bottom: 1px solid var(--error);
+		}
+	}
+	// .select__value
+	&__value {
+		display: flex;
+		min-width: 0;
+		align-items: center;
+		gap: 4px;
+		>* {
+			flex: 1 1 auto;
+		}
+		&:after {
+			@extend %ic;
+			content: "\e905";
+			// _icon-arrow
+			font-size: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 21px;
+			height: 21px;
+			color: rgba(0, 0, 0, 0.60);
+			transition: all 0.3s ease 0s;
+			._select-open & {
+				transform: rotate(-180deg);
+			}
+		}
+		&._select-pseudo-label {
+			color: rgba(0, 0, 0, 0.60);
+			&::before {
+				content: attr(data-pseudo-label);
+				opacity: 0.5;
+			}
+		}
+	}
+	// .select__content
+	&__content {
+		flex: 1 1 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		color: rgba(0, 0, 0, 0.87);
+		position: absolute;
+		z-index: 2;
+		top: 100%;
+		min-width: 100%;
+		left: 0;
+		background-color: #fff;
+		border-top: 0;
+		border-top: 0;
+		padding: 8px 0px;
+		box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.10);
+	}
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальна висота
+		max-height: toRem(200);
+		&::-webkit-scrollbar {
+			width: 0 !important;
+			height: 0 !important;
+			display: none;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+			/* IE и Edge */
+			scrollbar-width: none;
+			/* Firefox */
+		}
+		// Стилі скроллбару
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+	// .select__option
+	&__option {
+		width: 100%;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 21px;
+		text-align: left;
+		cursor: pointer;
+		padding: 6px 16px;
+		color: inherit;
+		transition: all 0.2s ease-in-out 0s;
+		&._select-selected {
+			background-color: rgba(0, 0, 0, 0.04);
+		}
+		&.disabled {
+			pointer-events: none;
+			color: rgba(0, 0, 0, 0.38);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: rgba(0, 0, 0, 0.04);
+			}
+		}
+	}
+
+	// Конструкція додаткових даних
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+	&__asset {}
+	&__text {}
+
+	&--show-top {
+		.select__options {
+			top: auto;
+			bottom: calc(100% - toRem(1));
+			border: 1px solid #d9d9d9;
+			border-bottom: 0;
+			border-radius: 4px 4px 0 0;
+			padding: 5px 0px 10px 0px;
+		}
+	}
+
+	// Стан селекту
+	&._select-open {}
+	&._select-disabled {}
+	&._select-active {}
+	&._select-focus {}
+	&._select-multiple {}
+	&._select-checkbox {}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}
+
+
+.select_quantity {
+	min-width: 32px;
+	.select__title {
+		padding: 3px 4px;
+		border-radius: 2px !important;
+		background: rgba(0, 0, 0, 0.06);
+		border-bottom: none;
+		color: rgba(0, 0, 0, 0.60);
+		font-size: 13px;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.select__value {
+		&::after {
+			width: 12px;
+			height: 12px;
+			content: "\e902";
+			// _icon-arrow-down_2
+			font-size: 6px;
+		}
+	}
+	.select__option {
+		padding: 2px 4px;
+		text-align: center;
+	}
+}

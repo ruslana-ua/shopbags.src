@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>Оформлення замовлення</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240528093401">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="100" data-scroll-show class="header header-cart">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<a href="" class="header__logo">Logotipo</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="order">
+				<div class="order__container">
+					<div class="order__body">
+						<h3 class="order__title">Оформлення замовлення</h3>
+						<div data-one-select class="order__wrapper">
+							<form action="" data-goto-error class="order__form form-order">
+								<div class="form-order__block">
+									<div class="form-order__label">Спосіб доставки</div>
+									<div class="form-order__wrap">
+										<div class="form-order__radio">
+											<input id="type-1" checked type="radio" value="1" name="type" class="form-order__radio--input">
+											<label for="type-1" class="form-order__label _icon-novaposhta">Відділення</label>
+										</div>
+										<div class="form-order__radio">
+											<input id="type-2" type="radio" value="2" name="type" class="form-order__radio--input">
+											<label for="type-2" class="form-order__label _icon-novaposhta">Адресна доставка</label>
+										</div>
+									</div>
+									<div class="form-order__row">
+										<div class="form__data">
+											<select data-error="Поле є обовʼязковим для заповнення" data-required data-validate name="form[]" data-class-modif="form">
+												<option value="" disabled selected hidden></option>
+												<option value="1">Пункт №1</option>
+												<option value="2">Пункт №2</option>
+												<option value="3">Пункт №3</option>
+												<option value="4">Пункт №4</option>
+											</select>
+											<div class="form__label">Місто*</div>
+										</div>
+										<div class="form__data form__data--address hide">
+											<input data-error="Поле є обовʼязковим для заповнення" data-required="name" data-validate type="text" name="name" class="form__input">
+											<div class="form__label">Введіть адресу доставки*</div>
+										</div>
+										<div class="form__data form__data--department">
+											<select data-error="Поле є обовʼязковим для заповнення" data-required data-validate name="form[]" data-class-modif="form">
+												<option value="" disabled selected hidden></option>
+												<option value="1">Пункт №1</option>
+												<option value="2">Пункт №2</option>
+												<option value="3">Пункт №3</option>
+												<option value="4">Пункт №4</option>
+											</select>
+											<div class="form__label">Відділення Нової Пошти*</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-order__block form-order__block--mod">
+									<div class="form-order__label">Спосіб оплати</div>
+									<div class="form-order__radio">
+										<input id="pay-2" type="checkbox" value="1" name="pay" class="form-order__radio--input">
+										<label for="pay-2" class="form-order__label">Готівковий розрахунок на “Новій Пошті”</label>
+									</div>
+								</div>
+								<div class="form-order__block">
+									<div class="form-order__label">Контактні данні отримувача</div>
+									<div class="form-order__row">
+										<div class="form__data">
+											<input data-error="Мінімум 2 символи" data-required="name" data-validate type="text" name="name" class="form__input">
+											<div class="form__label">Імʼя*</div>
+										</div>
+										<div class="form__data">
+											<input data-error="Мінімум 2 символи" data-required="name" data-validate type="text" name="surname" class="form__input">
+											<div class="form__label">Прізвище*</div>
+										</div>
+									</div>
+									<div class="form-order__row">
+										<div class="form__data">
+											<input data-error="Введіть коректний номер телефону" data-required="phone" data-validate type="tel" name="phone" class="form__input phone-mask">
+											<div class="form__label">Телефон*</div>
+										</div>
+										<div class="form__data">
+											<input type="email" name="email" class="form__input">
+											<div class="form__label">E-mail</div>
+										</div>
+									</div>
+								</div>
+								<div class="form__sent--wrap">
+									<button type="submit" class="form__sent btn">Оформити замовлення <span>2400 ₴</span></button>
+								</div>
+							</form>
+							<div class="order__info info-order">
+								<div data-spollers class="info-order__spollers order-spollers">
+									<details class="order-spollers__item">
+										<summary class="order-spollers__title _icon-arrow-down_2">
+											<div class="order-spollers__button">Промокод</div>
+										</summary>
+										<div class="order-spollers__body">
+											<form action="" class="spollers-total__form">
+												<div class="spollers-total__data">
+													<input data-error="Цей код недійсний" data-required data-validate type="text" placeholder="Введіть ваш промокод" class="spollers-total__input">
+													<div data-error="Цей код недійсний" data-done="Промокод застовано" class="spollers-total__label"></div>
+												</div>
+												<button type="submit" class="spollers-total__link--btn">Прийняти</button>
+											</form>
+										</div>
+									</details>
+									<details data-open class="order-spollers__item">
+										<summary class="order-spollers__title _icon-arrow-down_2">
+											<div class="order-spollers__button">Деталі замовлення<span>3</span></div>
+										</summary>
+										<div class="order-spollers__body order-spollers__body--mod">
+											<div class="order-spollers__details">
+												<a href="" class="order-spollers__edit">Редагувати замовлення</a>
+												<div class="order-spollers__wrapper">
+													<div class="details__item">
+														<div class="details__image lazy_image ibg">
+															<img data-src="img/products/product_01.webp" alt="">
+														</div>
+														<div class="details__content">
+															<div class="details__block">
+																<div class="details__column">
+																	<div class="details__title">Назва Товару</div>
+																	<div class="details__copy product__copy">
+																		<div class="product__code--wrap">
+																			<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+																		</div>
+																		<button type="button" class="product__icon _icon-copy"></button>
+																	</div>
+																</div>
+																<div class="details__column details__column--last">
+																	<div class="product__price">803 ₴</div>
+																	<div class="details__row">
+																		<div class="product__price--old">1220 ₴</div>
+																	</div>
+																</div>
+															</div>
+															<div class="details__bottom">
+																<div class="details__line">
+																	<div class="details__inserted">Розмір:</div>
+																	<div class="details__text">М</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="details__item">
+														<div class="details__image lazy_image ibg">
+															<img data-src="img/products/product_01.webp" alt="">
+														</div>
+														<div class="details__content">
+															<div class="details__block">
+																<div class="details__column">
+																	<div class="details__title">Назва Товару</div>
+																	<div class="details__copy product__copy">
+																		<div class="product__code--wrap">
+																			<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+																		</div>
+																		<button type="button" class="product__icon _icon-copy"></button>
+																	</div>
+																</div>
+																<div class="details__column details__column--last">
+																	<div class="product__price">803 ₴</div>
+																	<div class="details__row">
+																		<div class="product__price--old">1220 ₴</div>
+																	</div>
+																</div>
+															</div>
+															<div class="details__bottom">
+																<div class="details__line">
+																	<div class="details__inserted">Розмір:</div>
+																	<div class="details__text">М</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="details__item">
+														<div class="details__image lazy_image ibg">
+															<img data-src="img/products/product_01.webp" alt="">
+														</div>
+														<div class="details__content">
+															<div class="details__block">
+																<div class="details__column">
+																	<div class="details__title">Назва Товару</div>
+																	<div class="details__copy product__copy">
+																		<div class="product__code--wrap">
+																			<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+																		</div>
+																		<button type="button" class="product__icon _icon-copy"></button>
+																	</div>
+																</div>
+																<div class="details__column details__column--last">
+																	<div class="product__price">803 ₴</div>
+																	<div class="details__row">
+																		<div class="product__price--old">1220 ₴</div>
+																	</div>
+																</div>
+															</div>
+															<div class="details__bottom">
+																<div class="details__line">
+																	<div class="details__inserted">Розмір:</div>
+																	<div class="details__text">М</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</details>
+								</div>
+								<ul class="info-order__total total__list">
+									<li class="total__item">
+										<div class="total__info">
+											<span>3 продукти</span>
+										</div>
+										<div class="total__data">2400 ₴</div>
+									</li>
+									<li class="total__item">
+										<div class="total__info">
+											<span>Доставка:</span>
+										</div>
+										<div class="total__data">За тарифами "Нова Пошта"</div>
+									</li>
+									<li class="total__item">
+										<div class="total__info">
+											<span>До сплати</span>
+										</div>
+										<div class="total__data">2400 ₴</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20240528093401"></script>
+</body>
+
+</html>

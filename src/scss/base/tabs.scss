@@ -1,0 +1,107 @@
+.tabs {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	column-gap: 28px;
+	@media (max-width:$tablet) {
+		flex-direction: column-reverse;
+		padding: 0px 14px 14px 14px;
+	}
+	// .tabs__baron-h
+	&__baron-h {
+		width: calc(50% - 14px) !important;
+		@media (max-width:$tablet) {
+			width: 100% !important;
+		}
+	}
+	// .tabs__navigation
+	&__navigation {
+		height: auto !important;
+		min-height: auto !important;
+		max-height: auto !important;
+		@media (max-width:$tablet) {
+			display: flex;
+			align-items: stretch;
+			column-gap: 6px;
+		}
+	}
+	// .tabs__title
+	&__title {
+		width: 100%;
+		text-align: left;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 28px;
+		padding: 20px;
+		border-radius: 6px;
+		border: 1px solid #E7EEEC;
+		background: rgba(0, 0, 0, 0.02);
+		transition: all 0.2s ease-in-out 0s;
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+		&:hover {
+			background: rgba(0, 0, 0, 0.04);
+		}
+		&._tab-active {
+			color: var(--wh);
+			background: var(--black);
+			border: 1px solid var(--black);
+		}
+		@media (max-width:$tablet) {
+			background: #F3FAFA;
+			min-width: 210px;
+			text-align: center;
+			font-size: 16px;
+			line-height: 18px;
+			border-radius: 8px;
+			padding: 6px 12px;
+			span {
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+			&:not(:last-child) {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+	// .tabs__content
+	&__content {
+		width: calc(50% - 14px);
+		background: var(--purple);
+		padding: 40px 33px 40px 40px;
+		border-radius: 16px;
+		@media (max-width:$tablet) {
+			width: 100%;
+			background: transparent;
+			padding: 0px 0px 20px 0px;
+		}
+	}
+	// .tabs__body
+	&__body {
+		font-size: 20px;
+		line-height: 34px;
+		p {
+			&:not(:last-child) {
+				margin: 0px 0px 8px 0px;
+			}
+		}
+		@media (max-width:$tablet) {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 30px;
+		}
+	}
+	// .tabs__baron
+	&__baron {}
+	// .tabs__scroller
+	&__scroller {
+		max-height: 448px;
+		padding: 0px 12px 0px 0px !important;
+		@media (max-width:$tablet) {
+			max-height: 392px;
+		}
+	}
+}

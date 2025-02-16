@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Контакти"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main>
+			<section class="breadcrumb">
+				<div class="breadcrumb__container">
+					<div class="breadcrumb__wrapper">
+						<ul class="breadcrumb__list">
+							<li class="breadcrumb__item"><a href="" class="breadcrumb__link">Головна</a></li>
+							<li class="breadcrumb__item"><span class="breadcrumb__active">Контакти</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="contacts-page">
+				<div class="contacts-page__container">
+					<h1 class="contacts-page__title--top">Контакти</h1>
+					<div class="contacts-page__wrapper">
+						<div class="contacts-page__image lazy_image">
+							<img data-src="img/main/contatcs_img.jpg" alt="">
+						</div>
+						<div class="contacts-page__content">
+							<h4 class="contacts-page__title">Ми працюємо для вас без вихідних, та раді будемо відповісти
+								на будь-які запитання.</h4>
+							<div class="contacts-page__main">
+								<div class="contacts-page__row">
+									<h4 class="contacts-page__tel">Call-центр</h4>
+									<div class="contacts-page__wrap">
+										<a href="tel:+380936712079" class="contacts-page__link">0936712079</a>
+										<a href="tel:+380999849333" class="contacts-page__link">0999849333</a>
+									</div>
+								</div>
+								<div class="contacts-page__info">
+									<div class="contacts-page__label">Режим роботи:</div>
+									<div class="contacts-page__text">Пн-Нд 10:00 — 22:00 <br>без вихідних</div>
+								</div>
+								<div class="contacts-page__bottom">
+									<button data-popup="#popup-callback" type="button" class="contacts-page__button btn">Замовити зворотній дзвінок</button>
+									<button data-popup="#popup-mail" type="submit" class="contacts-page__button btn btn_wh">Написати повідомлення на пошту</button>
+								</div>
+							</div>
+							<div class="contacts-page__footer">
+								<h4 class="contacts-page__title--footer">Телеграм</h4>
+								<div class="contacts-page__block">
+									<span class="contacts-page__discount discount">Знижка 10% на наступне замовлення при підписці на телеграм канал</span>
+									<div class="contacts-page__bottom">
+										<a data-popup="#popup-success" href="" class="contacts-page__button btn btn_wh _icon-telegram">Підписатись на наш канал</a>
+										<a data-popup="#popup-success-mail" href="" class="contacts-page__button btn btn_wh _icon-telegram">Написати в телеграм</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="content">
+				<div class="content__container">
+					<div class="content__wrapper baron">
+						<div class="content__body baron__scroller">
+							<p><strong>"Clatch.in.ua: Ваші Замовлення - Наш Підхід до Успіху!"</strong></p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+						</div>
+						<div class="baron__track">
+							<div class="baron__bar"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup-search.htm',{})
+	@@include('html/_popup-callback.htm',{})
+	@@include('html/_popup-mail.htm',{})
+	@@include('html/_popup-success.htm',{})
+	@@include('html/_popup-success-mail.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

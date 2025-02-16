@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main>
+			<section class="breadcrumb">
+				<div class="breadcrumb__container">
+					<div class="breadcrumb__wrapper">
+						<ul class="breadcrumb__list">
+							<li class="breadcrumb__item"><a href="" class="breadcrumb__link">Головна</a></li>
+							<li class="breadcrumb__item"><span class="breadcrumb__active">Каталог</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="catalog">
+				<div class="catalog__container">
+					<div data-scroll="120" data-scroll-show class="catalog__head">
+						<button type="submit" class="catalog__button filters-button _icon-filter">Фільтри</button>
+						<div data-dropdown class="catalog__sort sort">
+							<div class="sort__button-body">
+								<button type="button" data-dropdown-button class="sort__button _icon-arrow-down_2" data-value="asc">За замовчуванням</button>
+							</div>
+							<ul data-dropdown-list class="sort__list">
+								<li data-dropdown-item class="sort__item" data-value="asc">
+									<input id="sort-1" type="radio" value="asc" name="sort" class="sort__input">
+									<label for="sort-1" class="sort__label">За замовчуванням</label>
+								</li>
+								<li data-dropdown-item class="sort__item" data-value="asc">
+									<input id="sort-2" type="radio" value="asc" name="sort" class="sort__input">
+									<label for="sort-2" class="sort__label">За популярністю</label>
+								</li>
+								<li data-dropdown-item class="sort__item" data-value="desc">
+									<input id="sort-3" type="radio" value="desc" name="sort" class="sort__input">
+									<label for="sort-3" class="sort__label">Спочатку дешевше</label>
+								</li>
+								<li data-dropdown-item class="sort__item" data-value="desc">
+									<input id="sort-4" type="radio" value="desc" name="sort" class="sort__input">
+									<label for="sort-4" class="sort__label">Спочатку дорожче</label>
+								</li>
+								<li data-dropdown-item class="sort__item" data-value="desc">
+									<input id="sort-5" type="radio" value="desc" name="sort" class="sort__input">
+									<label for="sort-5" class="sort__label">Нові</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog__set">
+						<button type="button" class="catalog__item _icon-close">Guess</button>
+						<button type="button" class="catalog__item _icon-close">XS</button>
+						<button type="button" class="catalog__item _icon-close">Жовтий</button>
+						<button type="submit" class="catalog__del--all">Очистити всі</button>
+					</div>
+					<div class="catalog__filter filters">
+						<div class="filters__wrapper">
+							<div class="filters__top">
+								<div class="filters__title--top">Фільтри</div>
+								<button type="button" class="filters__button filters-button _icon-close"></button>
+							</div>
+							<div class="filters__main">
+								<div data-spollers class="filters__spollers">
+									<details data-open class="filters__details">
+										<summary class="filters__title _icon-arrow-down_2"><span>Категорія</span></summary>
+										<div class="filters__body">
+											<div data-showmore="items" class="filters__showmore">
+												<div data-showmore-content="4" class="filters__showmore--content">
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-1" name="filter_1">
+														<label class="filters__label" for="filter-1">
+															<div class="filters__label--text">Категорія 1</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-2" name="filter_1">
+														<label class="filters__label" for="filter-2">
+															<div class="filters__label--text">Категорія 2</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-3" name="filter_1">
+														<label class="filters__label" for="filter-3">
+															<div class="filters__label--text">Категорія 3</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-4" name="filter_1">
+														<label class="filters__label" for="filter-4">
+															<div class="filters__label--text">Категорія 4</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-5" name="filter_1">
+														<label class="filters__label" for="filter-5">
+															<div class="filters__label--text">Категорія 1</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-6" name="filter_1">
+														<label class="filters__label" for="filter-6">
+															<div class="filters__label--text">Категорія 2</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-7" name="filter_1">
+														<label class="filters__label" for="filter-7">
+															<div class="filters__label--text">Категорія 3</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-8" name="filter_1">
+														<label class="filters__label" for="filter-8">
+															<div class="filters__label--text">Категорія 4</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-9" name="filter_1">
+														<label class="filters__label" for="filter-9">
+															<div class="filters__label--text">Категорія 1</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-10" name="filter_1">
+														<label class="filters__label" for="filter-10">
+															<div class="filters__label--text">Категорія 2</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-11" name="filter_1">
+														<label class="filters__label" for="filter-11">
+															<div class="filters__label--text">Категорія 3</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="filter-12" name="filter_1">
+														<label class="filters__label" for="filter-12">
+															<div class="filters__label--text">Категорія 4</div>
+														</label>
+													</div>
+												</div>
+												<button data-showmore-button type="button" class="filters__button--more">
+													<div class="filters__more _icon-arrow">
+														<span>Показати більше</span>
+														<span>Сховати</span>
+													</div>
+												</button>
+											</div>
+										</div>
+									</details>
+									<details data-open class="filters__details">
+										<summary class="filters__title _icon-arrow-down_2"><span>Розмір</span></summary>
+										<div class="filters__body">
+											<div class="filters__row">
+												<div class="filters__item">
+													<input class="filters__checkbox" type="checkbox" id="filter_2-1" name="filter_2">
+													<label for="filter_2-1" class="filters__label--block">XXS</label>
+												</div>
+												<div class="filters__item">
+													<input class="filters__checkbox" type="checkbox" id="filter_2-2" name="filter_2">
+													<label for="filter_2-2" class="filters__label--block">XS</label>
+												</div>
+												<div class="filters__item">
+													<input class="filters__checkbox" type="checkbox" id="filter_2-3" name="filter_2">
+													<label for="filter_2-3" class="filters__label--block">S</label>
+												</div>
+												<div class="filters__item">
+													<input class="filters__checkbox" type="checkbox" id="filter_2-4" name="filter_2">
+													<label for="filter_2-4" class="filters__label--block">M</label>
+												</div>
+												<div class="filters__item">
+													<input class="filters__checkbox" type="checkbox" id="filter_2-5" name="filter_2">
+													<label for="filter_2-5" class="filters__label--block">L</label>
+												</div>
+												<div class="filters__item">
+													<input class="filters__checkbox" type="checkbox" id="filter_2-6" name="filter_2">
+													<label for="filter_2-6" class="filters__label--block">XL</label>
+												</div>
+											</div>
+										</div>
+									</details>
+									<details data-open class="filters__details">
+										<summary class="filters__title _icon-arrow-down_2"><span>Колір</span></summary>
+										<div class="filters__body">
+											<div data-showmore="items" class="filters__showmore">
+												<div data-showmore-content="4" class="filters__showmore--content">
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-1" name="color">
+														<label class="filters__label" for="color-1">
+															<div class="filters__color--wrap">
+																<div style="background: yellow;" class="filters__color"></div>
+																<div class="filters__label--text">Жовтий <span>(10)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-2" name="color">
+														<label class="filters__label" for="color-2">
+															<div class="filters__color--wrap">
+																<div style="background: lightblue;" class="filters__color"></div>
+																<div class="filters__label--text">Блакитний <span>(14)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-3" name="color">
+														<label class="filters__label" for="color-3">
+															<div class="filters__color--wrap">
+																<div style="background: beige;" class="filters__color"></div>
+																<div class="filters__label--text">Бежевий<span>(80)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-4" name="color">
+														<label class="filters__label" for="color-4">
+															<div class="filters__color--wrap">
+																<div style="background: white;" class="filters__color"></div>
+																<div class="filters__label--text">Білий <span>(10)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-5" name="color">
+														<label class="filters__label" for="color-5">
+															<div class="filters__color--wrap">
+																<div style="background: gray;" class="filters__color"></div>
+																<div class="filters__label--text">Сірий <span>(25)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-6" name="color">
+														<label class="filters__label" for="color-6">
+															<div class="filters__color--wrap">
+																<div style="background: brown;" class="filters__color"></div>
+																<div class="filters__label--text">Коричневий <span>(5)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-7" name="color">
+														<label class="filters__label" for="color-7">
+															<div class="filters__color--wrap">
+																<div style="background: yellow;" class="filters__color"></div>
+																<div class="filters__label--text">Жовтий <span>(10)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-8" name="color">
+														<label class="filters__label" for="color-8">
+															<div class="filters__color--wrap">
+																<div style="background: lightblue;" class="filters__color"></div>
+																<div class="filters__label--text">Блакитний <span>(14)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-9" name="color">
+														<label class="filters__label" for="color-9">
+															<div class="filters__color--wrap">
+																<div style="background: beige;" class="filters__color"></div>
+																<div class="filters__label--text">Бежевий<span>(80)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-10" name="color">
+														<label class="filters__label" for="color-10">
+															<div class="filters__color--wrap">
+																<div style="background: white;" class="filters__color"></div>
+																<div class="filters__label--text">Білий <span>(10)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-11" name="color">
+														<label class="filters__label" for="color-11">
+															<div class="filters__color--wrap">
+																<div style="background: gray;" class="filters__color"></div>
+																<div class="filters__label--text">Сірий <span>(25)</span></div>
+															</div>
+														</label>
+													</div>
+													<div class="filters__data">
+														<input class="filters__checkbox" type="checkbox" id="color-12" name="color">
+														<label class="filters__label" for="color-12">
+															<div class="filters__color--wrap">
+																<div style="background: brown;" class="filters__color"></div>
+																<div class="filters__label--text">Коричневий <span>(5)</span></div>
+															</div>
+														</label>
+													</div>
+												</div>
+												<button data-showmore-button type="button" class="filters__button--more">
+													<div class="filters__more _icon-arrow">
+														<span>Показати більше</span>
+														<span>Сховати</span>
+													</div>
+												</button>
+											</div>
+										</div>
+									</details>
+								</div>
+							</div>
+							<div class="filters__bottom">
+								<button type="button" class="filters__btn btn btn_wh disabled">Очистити всі</button>
+								<button type="button" class="filters__btn btn disabled">Дивитись 45 товарів</button>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__wrapper">
+						<div class="product__wrap disabled">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_01.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_04.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_02.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star hide"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+							<div class="product__inner">
+								<div class="product__label--wrap">
+									<div class="product__label">New</div>
+								</div>
+								<button type="button" class="product__favorite _icon-favorite"></button>
+							</div>
+							<a href="" class="product__image lazy_image">
+								<img data-src="img/products/product_03.jpg" alt="">
+							</a>
+							<div class="product__main">
+								<div class="product__row">
+									<a href="" class="product__title">Назва Товару</a>
+									<div class="product__copy">
+										<div class="product__code--wrap">
+											<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+										</div>
+										<button type="button" class="product__icon _icon-copy"></button>
+									</div>
+								</div>
+								<div class="product__bottom">
+									<div class="product__rating rating">
+										<div class="rating__block">
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+											<div class="rating__star _icon-star"></div>
+										</div>
+										<div class="rating__total">5 відгуків</div>
+									</div>
+									<div class="product__price--wrap">
+										<div class="product__price">803 ₴</div>
+										<div class="product__price--old">1220 ₴</div>
+									</div>
+									<button data-popup="#popup-quick-order" type="button" class="product__buy btn">Швидке замовлення</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__nav">
+						<button type="button" class="catalog__more btn btn_wh">Більше товарів</button>
+						<ul class="catalog__pagination pagination">
+							<a href="" class="pagination__button pagination__button--prev _icon-arrow-btn"></a>
+							<li class="pagination__list">
+								<a href="" class="pagination__link pagination__link--active">1</a>
+							</li>
+							<li class="pagination__list">
+								<a href="" class="pagination__link">2</a>
+							</li>
+							<li class="pagination__list">
+								<a href="" class="pagination__link">3</a>
+							</li>
+							<li class="pagination__list">
+								<a href="" class="pagination__link">4</a>
+							</li>
+							<li class="pagination__list">
+								<a href="" class="pagination__link">5</a>
+							</li>
+							<li class="pagination__list">
+								<div class="pagination__link">...</div>
+							</li>
+							<li class="pagination__list">
+								<a href="" class="pagination__link">12</a>
+							</li>
+							<a href="" class="pagination__button pagination__button--next _icon-arrow-btn"></a>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="content">
+				<div class="content__container">
+					<div class="content__wrapper baron">
+						<div class="content__body baron__scroller">
+							<p><strong>"Clatch.in.ua: Ваші Замовлення - Наш Підхід до Успіху!"</strong></p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+							<p>Ласкаво просимо в Clatch.in.ua, де зручність та стиль об'єднуються в ідеальному аксесуарі для вас. Наш інтернет-магазин пропонує великий вибір сумок, чемоданів, клатчів та інших чудових товарів, які підкреслять ваш унікальний стиль.</p>
+						</div>
+						<div class="baron__track">
+							<div class="baron__bar"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup-search.htm',{})
+	@@include('html/_popup-quick_order.htm',{})
+	@@include('html/_popup-feedback.htm',{})
+	@@include('html/_popup-cart.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

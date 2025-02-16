@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Кошик"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header-cart.htm',{})
+		<main>
+			<section class="cart">
+				<div class="cart__container">
+					<div class="cart__body">
+						<h3 class="cart__title--top">кошик</h3>
+						<div class="cart__wrapper">
+							<div data-one-select class="cart__column">
+								<div class="details__item">
+									<div class="details__image lazy_image ibg">
+										<img data-src="img/products/product_02.jpg" alt="">
+									</div>
+									<div class="details__content">
+										<div class="details__block">
+											<div class="details__column">
+												<div class="details__title">Назва товару Назва товару Назва товару Назва товару Назва товару Назва товару Назва товару</div>
+												<div class="details__copy product__copy">
+													<div class="product__code--wrap">
+														<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+													</div>
+													<button type="button" class="product__icon _icon-copy"></button>
+												</div>
+											</div>
+											<div class="details__column details__column--last">
+												<div class="product__price">803 ₴</div>
+												<div class="details__row">
+													<div class="product__price--old">1220 ₴</div>
+												</div>
+											</div>
+										</div>
+										<div class="details__bottom details__bottom--cart">
+											<div class="details__quantity--wrap">
+												<div class="details__quantity">
+													<div class="details__quantity--text">Кількість</div>
+													<select data-show-selected data-class-modif="quantity">
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+													</select>
+												</div>
+											</div>
+											<div class="details__icon _icon-trash"></div>
+										</div>
+									</div>
+								</div>
+								<div class="details__item">
+									<div class="details__image lazy_image ibg">
+										<img data-src="img/products/product_03.jpg" alt="">
+									</div>
+									<div class="details__content">
+										<div class="details__block">
+											<div class="details__column">
+												<div class="details__title">Назва товару</div>
+												<div class="details__copy product__copy">
+													<div class="product__code--wrap">
+														<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+													</div>
+													<button type="button" class="product__icon _icon-copy"></button>
+												</div>
+											</div>
+											<div class="details__column details__column--last">
+												<div class="product__price">803 ₴</div>
+												<div class="details__row">
+													<div class="product__price--old">1220 ₴</div>
+												</div>
+											</div>
+										</div>
+										<div class="details__bottom details__bottom--cart">
+											<div class="details__quantity">
+												<div class="details__quantity--text">Кількість</div>
+												<select data-show-selected data-class-modif="quantity">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											</div>
+											<div class="details__icon _icon-trash"></div>
+										</div>
+									</div>
+								</div>
+								<div class="details__item">
+									<div class="details__image lazy_image ibg">
+										<img data-src="img/products/product_04.jpg" alt="">
+									</div>
+									<div class="details__content">
+										<div class="details__block">
+											<div class="details__column">
+												<div class="details__title">Назва товару</div>
+												<div class="details__copy product__copy">
+													<div class="product__code--wrap">
+														<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+													</div>
+													<button type="button" class="product__icon _icon-copy"></button>
+												</div>
+											</div>
+											<div class="details__column details__column--last">
+												<div class="product__price">803 ₴</div>
+												<div class="details__row">
+													<div class="product__price--old">1220 ₴</div>
+												</div>
+											</div>
+										</div>
+										<div class="details__bottom details__bottom--cart">
+											<div class="details__quantity">
+												<div class="details__quantity--text">Кількість</div>
+												<select data-show-selected data-class-modif="quantity">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											</div>
+											<div class="details__icon _icon-trash"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart__total total">
+								<h4 class="cart__title">Підсумок замовлення</h4>
+								<div class="total__wrapper">
+									<ul class="total__list">
+										<li class="total__item">
+											<div class="total__info">
+												<span>Разом</span>
+											</div>
+											<div class="total__data">2400 ₴</div>
+										</li>
+									</ul>
+									<div class="total__button--wrap">
+										<a href="" class="total__button btn">Оформити замовлення <span>2400 ₴</span></a>
+									</div>
+									<div data-spollers class="total__spollers spollers-total">
+										<details class="spollers-total__item">
+											<summary class="spollers-total__title _icon-arrow-down_2">Промокод</summary>
+											<div class="spollers-total__body">
+												<form action="" class="spollers-total__form">
+													<div class="spollers-total__data">
+														<input data-error="Цей код недійсний" data-required data-validate type="text" placeholder="Введіть ваш промокод" class="spollers-total__input">
+														<div data-error="Цей код недійсний" data-done="Промокод застовано" class="spollers-total__label"></div>
+													</div>
+													<button type="submit" class="spollers-total__link--btn">Прийняти</button>
+												</form>
+											</div>
+										</details>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

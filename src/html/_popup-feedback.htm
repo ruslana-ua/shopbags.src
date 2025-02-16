@@ -1,0 +1,44 @@
+<div id="popup-feedback" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<h4 class="popup__title">Залишити відгук</h4>
+			<form action="" class="popup__form form form-feedback">
+				<div class="form__list">
+					<div class="form__data">
+						<div class="form__star-rating star-rating">
+							<input type="radio" name="rating" data-required data-validate class="star-rating__input" id="star-rating-5">
+							<label class="star-rating__ico _icon-star" for="star-rating-5" title="5 out of 5 stars" value="5"></label>
+							<input type="radio" name="rating" data-required data-validate class="star-rating__input" id="star-rating-4">
+							<label class="star-rating__ico _icon-star" for="star-rating-4" title="4 out of 5 stars" value="4"></label>
+							<input type="radio" name="rating" data-required data-validate class="star-rating__input" id="star-rating-3">
+							<label class="star-rating__ico _icon-star" for="star-rating-3" title="3 out of 5 stars" value="3"></label>
+							<input type="radio" name="rating" data-required data-validate class="star-rating__input" id="star-rating-2">
+							<label class="star-rating__ico _icon-star" for="star-rating-2" title="2 out of 5 stars" value="2"></label>
+							<input type="radio" name="rating" data-error="Залиште свою оцінку" data-required data-validate class="star-rating__input" id="star-rating-1">
+							<label class="star-rating__ico _icon-star" for="star-rating-1" title="1 out of 5 stars" value="1"></label>
+						</div>
+						<div class="form__label form__label--show">Ваша оцінка*</div>
+					</div>
+					<div class="form__data">
+						<input type="text" name="name" class="form__input">
+						<div class="form__label">Імʼя</div>
+					</div>
+					<div class="form__data form__data--mod">
+						<textarea class="form__textarea" name="comment" placeholder="Введіть ваш коментар"></textarea>
+						<div class="form__label form__label--show">Коментар</div>
+					</div>
+					<div class="form__data form__data--mod">
+						<textarea class="form__textarea form__textarea--mod baron__scroller" name="advantages" placeholder="Введіть ваш коментар стосовно переваг"></textarea>
+						<div class="form__label form__label--show">Переваги</div>
+					</div>
+					<div class="form__data form__data--mod">
+						<textarea class="form__textarea form__textarea--mod" name="disadvantages" placeholder="Введіть ваш коментар стосовно недоліків"></textarea>
+						<div class="form__label form__label--show">Недоліки</div>
+					</div>
+				</div>
+				<button type="submit" class="form__sent btn form__sent--feedback">Залишити відгук</button>
+			</form>
+		</div>
+	</div>
+</div>

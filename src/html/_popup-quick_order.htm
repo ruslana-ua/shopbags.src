@@ -1,0 +1,54 @@
+<div id="popup-quick-order" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content--quick-order">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<h4 class="popup__title">Швидка покупка</h4>
+			<div class="popup__quick-order quick-order">
+				<div class="quick-order__image ibg lazy_image">
+					<img data-src="img/products/product_03.jpg" alt="">
+				</div>
+				<div class="quick-order__block">
+					<div class="quick-order__column">
+						<div class="quick-order__title">Назва товару Назва товару Назва товару Назва товару Назва товару Назва товару Назва товару</div>
+						<div class="quick-order__copy product__copy">
+							<div class="product__code--wrap">
+								<div class="product__code--text">Код: <span class="product__code">1533277</span></div>
+							</div>
+							<button type="button" class="product__icon _icon-copy"></button>
+						</div>
+					</div>
+					<div class="quick-order__column quick-order__column--last">
+						<div class="product__price">803 ₴</div>
+						<div class="product__price--old">1220 ₴</div>
+					</div>
+				</div>
+			</div>
+			<form action="" class="popup__form form">
+				<div class="form__list">
+					<div class="form__data">
+						<select data-error="Оберіть розмір" data-required data-validate name="form[]" data-class-modif="form">
+							<option value="" disabled selected hidden></option>
+							<option value="1">XXS</option>
+							<option value="2">XS</option>
+							<option value="3" data-class="disabled">S</option>
+							<option value="4">M</option>
+							<option value="4">L</option>
+							<option value="4">XL</option>
+							<option value="4">XXL</option>
+						</select>
+						<div class="form__label">Розмір*</div>
+					</div>
+					<div class="form__data">
+						<input data-error="Мінімум 2 символи" data-required="name" data-validate type="text" name="name" class="form__input">
+						<div class="form__label">Імʼя*</div>
+					</div>
+					<div class="form__data">
+						<input data-error="Введіть коректний номер телефону" data-required="phone" data-validate type="tel" name="phone" class="form__input phone-mask">
+						<div class="form__label">Телефон*</div>
+					</div>
+				</div>
+				<button type="submit" class="form__sent btn">Придбати</button>
+			</form>
+		</div>
+	</div>
+</div>
