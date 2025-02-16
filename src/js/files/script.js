@@ -85,41 +85,6 @@ if (includeElement) {
   document.documentElement.classList.add('wh');
 }
 //====================================================================================================
-// Теперь функция copyProductCode доступна для вызова из любого места в коде
-// Глобальная функция для копирования кода товара
-// function copyProductCode(button) {
-//   var productCopy = button.closest('.product__copy');
-//   var productCodeElement = productCopy.querySelector('.product__code');
-//   var productCodeText = productCodeElement.textContent || productCodeElement.innerText;
-//   var tempInput = document.createElement('input');
-//   tempInput.value = productCodeText;
-//   document.body.appendChild(tempInput);
-//   tempInput.select();
-//   document.execCommand('copy');
-//   document.body.removeChild(tempInput);
-//   // Добавляем класс 'done'
-//   productCopy.classList.add('done');
-//   // Устанавливаем таймер для удаления класса 'done' через 1 минуту (60000 миллисекунд)
-//   setTimeout(function () {
-//       productCopy.classList.remove('done');
-//   }, 1000);
-// }
-// // Глобальная функция для обработчика события при загрузке контента
-// // function initCopyProductCode() {
-// window.initCopyProductCode = function() {
-//   // Находим все элементы с классом .product__icon
-//   var iconButtons = document.querySelectorAll('.product__icon');
-//   if(iconButtons) {
-//     // Добавляем обработчик события для каждой кнопки
-//     iconButtons.forEach(function(button) {
-//       button.addEventListener('click', function() {
-//         copyProductCode(button);
-//       });
-//     });
-//   }
-// }
-// // Вызываем функцию для обработчика события при загрузке контента
-// document.addEventListener("DOMContentLoaded", initCopyProductCode);
 function copyProductCode(button) {
   var productCopy = button.closest('.product__copy');
   var productCodeElement = productCopy.querySelector('.product__code');
@@ -161,62 +126,6 @@ window.initCopyProductCode = function() {
 }
 // Вызываем функцию для обработчика события при загрузке контента
 document.addEventListener("DOMContentLoaded", initCopyProductCode);
-//====================================================================================================
-// // Модуль прокручування до блоку
-// import { gotoBlock } from "../files/scroll/gotoblock.js";
-// // Функция для выполнения gotoBlock с задержкой
-// function executeGotoBlock(parent) {
-//   gotoBlock(parent.querySelector('.filters__item'), true, 1000);
-// }
-// // Функция для отслеживания изменений DOM
-// function observeDOMChanges(callback) {
-//   const observer = new MutationObserver(callback);
-//   observer.observe(document, { subtree: true, childList: true });
-// }
-// // Функция, которая будет вызываться при изменении DOM
-// function onChangeDOM(mutationsList) {
-//   console.log("DOM изменения произошли:");
-//   mutationsList.forEach(mutation => {
-//       mutation.removedNodes.forEach(node => {
-//           if (node.classList && node.classList.contains('filters__block') && !node.classList.contains('_showmore-active')) {
-//               console.log("Удален элемент с классом filters__block без класса _showmore-active");
-//               // Находим родителя filters__item
-//               const parentItem = node.closest('.filters__item');
-//               if (parentItem) {
-//                   setTimeout(() => executeGotoBlock(parentItem), 500);
-//               }
-//           }
-//       });
-//   });
-// }
-// // Начинаем отслеживать изменения DOM
-// observeDOMChanges(onChangeDOM);
-//====================================================================================================
-// // Модуль прокручування до блоку
-// import { gotoBlock } from "../files/scroll/gotoblock.js";
-//   // Функция для выполнения gotoBlock с задержкой
-//   function executeGotoBlock() {
-//     gotoBlock('._showmore-active', true, 1000);
-// }
-// // Наблюдаем за контейнером tabs-services
-// const container = document.querySelector('.product-reviews__wrapper');
-// if(container) {
-// // Функция, которая будет вызываться при изменении DOM
-// function handleMutation(mutationsList, observer) {
-//     // Проверяем, есть ли добавление класса _tab-active
-//     mutationsList.forEach(mutation => {
-//         if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-//             if (!mutation.target.classList.contains('_showmore-active')) {
-//                 // Выполняем ваш код с задержкой в 3 секунды
-//                 setTimeout(executeGotoBlock, 500);
-//             }
-//         }
-//     });
-// }
-// // Создаем новый экземпляр MutationObserver и назначаем ему функцию обратного вызова
-// const observer = new MutationObserver(handleMutation);
-// observer.observe(container, { attributes: true, subtree: true, attributeFilter: ['class'] });
-// }
 //====================================================================================================
 // Модуль прокручування до блоку
 import { gotoBlock } from "../files/scroll/gotoblock.js";
@@ -341,30 +250,6 @@ if(formOrderBlock) {
   });
 }
 //====================================================================================================
-// document.addEventListener("DOMContentLoaded", function() {
-//   const popupFeedback = document.getElementById('popup-feedback');
-//   const formStarRating = document.querySelector('.form__star-rating');
-
-//   // Функция для прокрутки к блоку с ошибкой
-//   function scrollToErrorBlock() {
-//     popupFeedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
-//   }
-
-//   // MutationObserver для отслеживания добавления класса _form-error
-//   const observer = new MutationObserver(function(mutationsList) {
-//       for (const mutation of mutationsList) {
-//           if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-//               if (formStarRating.classList.contains('_form-error')) {
-//                   scrollToErrorBlock();
-//               }
-//           }
-//       }
-//   });
-
-//   observer.observe(formStarRating, { attributes: true });
-// });
-
-
 const popupFeedback = document.getElementById('popup-feedback');
 if(popupFeedback) {
   document.addEventListener("DOMContentLoaded", function() {
